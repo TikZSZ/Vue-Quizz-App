@@ -131,6 +131,9 @@ export default defineComponent({
       questionIndex: number,
       answerIndex: number
     ) {
+      if(this.questionsAnswered[questionIndex]!==undefined){
+        return 
+      }
       this.totalQuestionsAnswered++;
       if (isCorrect) {
         this.correctAnswers++;
